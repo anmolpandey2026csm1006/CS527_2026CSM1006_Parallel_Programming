@@ -1,0 +1,4 @@
+bin/
+wrapper_app
+*.o
+*.out

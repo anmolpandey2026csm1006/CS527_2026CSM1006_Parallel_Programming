@@ -22,13 +22,23 @@ CS527_2026CSM1006_Parallel_Programming
 │   ├── Makefile
 │   └── README.md
 │
+├── Assignment_02                (OpenMP: arrays and matrices, Lab 8)
+│   ├── Task_01                  (Array search)
+│   ├── Task_02                  (Array sorting)
+│   ├── Task_03                  (Histogram)
+│   ├── Task_04                  (Matrix transpose)
+│   ├── Task_05                  (2D convolution)
+│   ├── common_wrapper.cpp
+│   ├── Makefile
+│   └── README.md
+│
 ├── ...
 │
 ├── .gitignore
 └── README.md
 ```
 
-New assignment folders (`Assignment_02`, ...) are added as the course progresses, keeping the same layout.
+New assignment folders (`Assignment_03`, ...) are added as the course progresses, keeping the same layout.
 
 ---
 
@@ -37,6 +47,7 @@ New assignment folders (`Assignment_02`, ...) are added as the course progresses
 | Assignment | Topic | Tasks | Status |
 |---|---|---|---|
 | [Assignment_01](Assignment_01/README.md) | Introduction to OpenMP: arrays and matrices | Vector addition, array sum, max/min with index, matrix addition, matrix multiplication | Code complete; timing tables to be filled from my machine |
+| [Assignment_02](Assignment_02/README.md) | OpenMP (Lab 8): arrays and matrices | Array search, array sorting, histogram, matrix transpose, 2D convolution | Code complete; timing tables to be filled from my machine |
 
 ---
 
@@ -83,6 +94,7 @@ Each assignment README documents its tasks, how the timings are measured, and th
 - Serial and parallel versions of every function are both implemented, and the parallel result is verified against the serial one before any timing is reported.
 - Timing uses `omp_get_wtime()`; the thread count is set in code with `omp_set_num_threads()`.
 - Built binaries (`bin/`, `wrapper_app`) are not committed (see `.gitignore`).
+- Assignment_02 reuses the timing/argument helper `Assignment_01/common/omp_bench.hpp` instead of copying it, so keep the assignment folders side by side.
 
 ---
 
